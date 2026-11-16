@@ -1,9 +1,13 @@
 import json
 ## Open the JSON file of pokemon data
-pokedex = open("./pokedex.json", encoding="utf8")
+pokedex = open("./pokedex.json", encoding = "utf8")
 ## create variable "data" that represents the enitre pokedex list
 data = json.load(pokedex)
-print(data[0])
+for pokemon in data:
+    print (pokemon["name"])
+Question = input('what language would you like to continue in?:')
+Language = {"english", "japanese", "Chinese", "French"}
+if input == Language:{"english"}
 
 # Create a function that will take the data from the JSON file and you will iterate through the list of pokemon and print each pokemons name.
 
