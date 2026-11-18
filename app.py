@@ -7,8 +7,14 @@ for pokemon in data:
     print (pokemon["name"])
 Question = input('what language would you like to continue in?:')
 Language = {"english", "japanese", "Chinese", "French"}
-if input == Language:{"english"}
-
+if Question == Language == ["english"]:
+    print (pokemon["name"] ["english"])
+if Question == ["japanese"]:
+    print (pokemon["name"] ["japanese"])
+if Question == ["chinese"]:
+    print (pokemon["name"] ["chinese"])
+if Question == ["french"]:
+    print (pokemon["name"] ["french"])   
 # Create a function that will take the data from the JSON file and you will iterate through the list of pokemon and print each pokemons name.
 
 # Add a language choice feature and print the pokemons name based on the user input
