@@ -3,13 +3,20 @@ import json
 pokedex = open("./pokedex.json", encoding = "utf8")
 ## create variable "data" that represents the enitre pokedex list
 data = json.load(pokedex)
-Language = input('what language would you like to continue in?:')
+
+""" Language = input('what language would you like to continue in?:')
 for pokemon in data:
     print (pokemon["name"][Language])
-    
+     """
 Types = input ("what pokemon type are you looking for?:")
+typelist=()
 for pokemon in data:
-    print (pokemon["types.json"][Types])
+    while (pokemon ["type"])== Types:
+      print (pokemon["name"]) in typelist
+
+#loop for the love of God
+#then inside the loop LOOK AT THWE TYPES
+#hank sit down
 
 # Create a function that will take the data from the JSON file and you will iterate through the list of pokemon and print each pokemons name.
 
