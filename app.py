@@ -11,8 +11,11 @@ for pokemon in data:
 Types = input ("what pokemon type are you looking for?:")
 typelist=()
 for pokemon in data:
-    while (pokemon ["type"])== Types:
-      print (pokemon["name"]) in typelist
+    if pokemon ["type"] == Types:
+      print (pokemon["name"]) 
+    else:
+       print ("No Pokemon found")
+       break
 
 #loop for the love of God
 #then inside the loop LOOK AT THWE TYPES
