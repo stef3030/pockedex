@@ -4,18 +4,29 @@ pokedex = open("./pokedex.json", encoding = "utf8")
 ## create variable "data" that represents the enitre pokedex list
 data = json.load(pokedex)
 
-""" Language = input('what language would you like to continue in?:')
+text = "TEST"
+print(text.lower())
+
+
+
+
+Language = input('what language would you like to continue in?:')
 for pokemon in data:
     print (pokemon["name"][Language])
-     """
+    
 Types = input ("what pokemon type are you looking for?:")
-typelist=()
 for pokemon in data:
-    if pokemon ["type"] == Types:
-      print (pokemon["name"]) 
-    else:
-       print ("No Pokemon found")
-       break
+    for stuff in pokemon["type"]:
+      #fix if statement so doesnt matter cap or no cap
+      if stuff.lower() == Types.lower():
+        #specify language
+        print(pokemon["name"][Language]) 
+
+         
+      #fix this
+      #if :
+       # print("No Pokemon found")
+        #break
 
 #loop for the love of God
 #then inside the loop LOOK AT THWE TYPES
